@@ -6,7 +6,7 @@ RUN git clone https://github.com/happylay-cloud/vue-admin.git
 
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-RUN cd vue-admin
+RUN cd /vue-admin
 
 RUN ls
 
