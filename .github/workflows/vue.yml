@@ -17,6 +17,7 @@ jobs:
     - run: |
         # 查看node版本
         node -v
+        
   job2: 
     # 运行环境
     runs-on: ubuntu-latest
@@ -31,7 +32,7 @@ jobs:
            -H 'Content-Type: application/json' \
            -d '{"msgtype": "text", 
                 "text": {
-                     "content": "github-vue-admin有代码推送"
+                     "content": "github-vue-admin有代码推送注意查看"
                 }
               }'       
 
