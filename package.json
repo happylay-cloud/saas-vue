@@ -1,7 +1,7 @@
 {
   "name": "vue-admin",
   "version": "1.0.0",
-  "description": "Admin 后台管理系统基础模板",
+  "description": "Admin 后台管理系统",
   "author": "happylay <happylay@happylay.com>",
   "private": true,
   "scripts": {
