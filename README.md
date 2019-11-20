@@ -2,7 +2,9 @@
 
 HappyLay后台管理系统基础框架
 
-## 运行
+## 运行-更换淘宝镜像源
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### 1.安装
 
@@ -12,3 +14,6 @@ cnpm install
 
 cnpm run dev
 
+### 3.打包
+
+cnpm run build
