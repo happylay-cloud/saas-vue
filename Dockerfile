@@ -1,6 +1,6 @@
 FROM node
 
-COPY vue-admin /
+RUN git clone https://github.com/happylay-cloud/vue-admin.git
 
 RUN cd vue-admin
 
