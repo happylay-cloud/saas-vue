@@ -1,3 +1,26 @@
-FROM nginx
+FROM node
 
-COPY ./dist /usr/share/nginx/html
+COPY vue-admin /
+
+RUN cd vue-admin
+
+RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+RUN cnpm install 
+
+RUN cnpm run build 
+
+COPY entrypoint.sh /usr/local/bin/
+
+RUN mkdir /html
+
+RUN chmod 755 /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+
+WORKDIR /vue-admin
+
+EXPOSE 8080
+
+CMD ["mv /vue-admin/dist /html"]
+
