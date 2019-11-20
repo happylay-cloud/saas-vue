@@ -17,8 +17,12 @@ jobs:
     - run: |
         # 查看node版本
         node -v
+        # 查看文件
         ls
-        
+        # 编译文件
+        npm run build
+        # 查看
+        ls       
   job2: 
     # 运行环境
     runs-on: ubuntu-latest
