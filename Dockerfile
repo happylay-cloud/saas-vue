@@ -1,5 +1,7 @@
 FROM node
 
+RUN cd /
+
 RUN git clone https://github.com/happylay-cloud/vue-admin.git
 
 RUN cd vue-admin
