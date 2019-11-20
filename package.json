@@ -1,8 +1,8 @@
 {
-  "name": "itheima-admin",
+  "name": "vue-admin",
   "version": "1.0.0",
-  "description": "黑马Admin 管理系统基础模板",
-  "author": "taoshiwei <taoshiwei@itcast.cn>",
+  "description": "Admin 后台管理系统",
+  "author": "happylay <happylay@happylay.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
