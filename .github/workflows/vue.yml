@@ -19,6 +19,8 @@ jobs:
         node -v
         # 查看文件
         ls
+        # 安装
+        npm install
         # 编译文件
         npm run build
         # 查看
