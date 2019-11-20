@@ -4,7 +4,7 @@ on: [push]
 # 任务
 jobs:
   # 任务编号自定义
-  编译代码: 
+  job1: 
     # 运行环境
     runs-on: ubuntu-latest
     # 运行步骤
@@ -19,7 +19,7 @@ jobs:
         node -v
         ls
         
-  告警: 
+  job2: 
     # 运行环境
     runs-on: ubuntu-latest
     # 运行步骤
