@@ -24,5 +24,3 @@ WORKDIR /vue-admin
 
 EXPOSE 8080
 
-CMD ["mv /vue-admin/dist /html"]
-
