@@ -1,12 +1,14 @@
 FROM node
 
-RUN cd /
+WORKDIR  /
 
 RUN git clone https://github.com/happylay-cloud/vue-admin.git
 
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-RUN cd /vue-admin
+RUN ls
+
+WORKDIR  /vue-admin
 
 RUN ls
 
