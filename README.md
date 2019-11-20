@@ -16,4 +16,4 @@ cnpm run dev
 
 ### 3.打包
 
-cnpm run dev
+cnpm run build
