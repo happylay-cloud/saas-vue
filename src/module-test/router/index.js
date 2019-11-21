@@ -1,5 +1,5 @@
 /**
- * xxx业务模块 
+ * 测试模块 
  */
 import Layout from '@/module-dashboard/pages/layout'
 const _import = require('@/router/import_' + process.env.NODE_ENV)
@@ -16,11 +16,17 @@ export default [
       icon: 'component'
     },
     children: [
-      {
+      { 
         path: 'index', /** 请求地址 **/ /** /saas-page/index **/
-        component: _import('test/mytest/index'), /** 跳转的vue视图 **/
+        component: _import('test/pages/index'), /** 跳转的vue视图 **/
         name: 'saas-test-index',
-        meta: {title: '测试页面', icon: 'component', noCache: true}
+        meta: {title: '测试列表展示', icon: 'component', noCache: true}
+      },
+      {
+        path: 'details/:id', 
+        component: _import('test/pages/index-details'),
+        name: 'saas-test-details',
+        meta: {title: '测试详情页面', icon: 'component', noCache: true}
       }
     ]
   }
