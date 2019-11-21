@@ -116,8 +116,6 @@ router.beforeEach((to, from, next) => {
     }
   }
 })
-
-
 /**
  * 导出 基础路由
  **/
