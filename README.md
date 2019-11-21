@@ -23,12 +23,13 @@ cnpm run build
 
 
 ####  main.js 注册模块XXX 
-
+```
 import  XXX  from '@/module-XXX/' // XXX模块
 
 Vue.use(XXX , store)
-
+```
 ####  配置路由模块
+```
 export default [
   {
     root: true,
@@ -50,7 +51,9 @@ export default [
     ]
   }
 ]
-
+```
 ####  配置api接口
+```
 index.vue 导入接口
 import {list} from '@/api/mytest/test'
+```
