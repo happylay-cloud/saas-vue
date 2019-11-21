@@ -40,12 +40,12 @@
 import {list} from '@/api/example/table'
 export default {
   name: 'saas-clients-table-index',
-  data() {
+  data() {// 数据模型（双向绑定）
     return {
       dataList: []
     }
   },
-  methods: {
+  methods: {// 当前页面需要用的js方法
     // 获取列表数据
     getList() {
       list().then(res => {
@@ -55,7 +55,7 @@ export default {
     }
   },
   // 创建完毕状态
-  created() {
+  created() {// 页面元素加载之前执行的方法（vue钩子函数）
     this.getList()
   },
 }
